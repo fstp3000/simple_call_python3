@@ -1,4 +1,4 @@
-from abi import *
+from w3.abi import *
 from web3 import HTTPProvider, Web3
 class farm():
     def __init__(self):
