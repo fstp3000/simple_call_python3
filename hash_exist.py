@@ -4,4 +4,4 @@ if __name__=="__main__":
     #web3 initialize
     ethereum = farm()
     #find all machineID you specified
-    ethereum.call_by_machineID(machineID = 10)
+    ethereum.hash_is_exist(photoHash = "0x1500000000000000000000000000000000000000000000000000000000000000")
