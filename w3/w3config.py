@@ -13,6 +13,14 @@ class farm():
         rpt=self.contract.functions.addPhoto(photoHash,photoInfo).transact({'from':self.sd_addr})
         print(rpt.hex())
     def call(self):
+        for step in range(300):
+            rpt = self.contract.functions.getPhoto(step).call()
+            rpt[1] = rpt[1].hex()
+            if rpt[1] == "":
+                print('Total', step, 'photos on the blockchain')
+                break
+            print(rpt)
+    def call2(self):
         rpt = self.contract.functions.getPhoto(0).call()
-        rpt[1] = rpt[1].hex()
-        print(rpt)
+    def call3(self):
+        rpt = self.contract.functions.getPhoto(0).call()
