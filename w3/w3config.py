@@ -69,11 +69,11 @@ class farm():
         if flag==False:
             print("Not exist")
     def show(self, photo):
-        print('photoID: ', photo[0])
+        print('photoID:   ', photo[0])
         print('photohash: ', photo[1])
-        print('catogory: ', photo[2])
-        print('numbers: ', photo[3])
+        print('catogory:  ', photo[2])
+        print('numbers:   ', photo[3])
         print('machineID: ', photo[4])
         print('localtime: ', photo[5])
-        print('gps: ', photo[6] )
-        print('------------------------')
+        print('gps:       ', photo[6] )
+        print('-' * 78)
