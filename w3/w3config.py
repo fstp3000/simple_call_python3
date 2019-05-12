@@ -36,7 +36,7 @@ class farm():
                 print('Total', step, 'photos on the blockchain')
                 self.photos = photos
                 print("scan done")
-                print("---------")
+                print("=" * 78)
                 break
             #print(rpt)
             photos.append(rpt)
