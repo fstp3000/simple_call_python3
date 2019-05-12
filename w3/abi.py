@@ -1,4 +1,3 @@
-#abi = [{"constant": False,"inputs":[{"name":"photohash","type":"bytes32"},{"name":"output","type":"uint256"}],"name":"addPhoto","outputs":[],"payable":False,"stateMutability":"nonpayable","type": "function"},{"constant":True,"inputs":[{"name":"photoID","type":"uint256"}],"name":"getPhoto","outputs":[{"name":"","type":"uint256"},{"name":"","type":"bytes32"},{"name":"","type":"uint256"}],"payable":False,"stateMutability": "view","type": "function"}]
 abi = [
 	{
 		"constant": False,
@@ -32,6 +31,20 @@ abi = [
 		"outputs": [],
 		"payable": False,
 		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": True,
+		"inputs": [],
+		"name": "getnumPhotos",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": False,
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
