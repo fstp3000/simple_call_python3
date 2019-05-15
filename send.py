@@ -4,7 +4,7 @@ if __name__=="__main__":
     #photohash type byte32
     photoHash = "0x1500000000000000000000000000000000000000000000000000000000000000"
     #catogory type byte32, ex laddy bugs
-    catogory = "0x1100000000000000000000000000000000000000000000000000000000000000"
+    category = "0x1100000000000000000000000000000000000000000000000000000000000000"
     #numbers type int32, number of laddy bugs
     numbers = 5
     #machineID type int32, to known who send the message
@@ -17,4 +17,4 @@ if __name__=="__main__":
     #web3 initialize
     ethereum = farm()
     #send function
-    ethereum.send(photoHash, catogory, numbers, machineID, localtime, gps)
+    ethereum.send(photoHash, category, numbers, machineID, localtime, gps)
