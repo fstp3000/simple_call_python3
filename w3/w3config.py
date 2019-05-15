@@ -37,7 +37,7 @@ class farm():
             photos.append(rpt)
             sys.stdout.write('\r')
             sys.stdout.write("[%-20s] %d%%" % ('=' * int(20 * (step+1) / num),
-                                               (step+1) * int(100/num)))
+                                               int((step+1) * 100/num)))
             sys.stdout.flush()
         print('\nTotal', num, 'photos on the blockchain')
         self.photos = photos
