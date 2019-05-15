@@ -10,15 +10,15 @@ class farm():
         self.sd_addr = self.web3.toChecksumAddress("0x132f98e1aa89ff2557f117906997d993fa33338f")
         self.contract = self.web3.eth.contract(abi = self.abi, address = self.sc_addr)
         self.photos = []
-    def send(self, photoHash, catogory, numbers, machineID, localtime, gps):
+    def send(self, photoHash, category, numbers, machineID, localtime, gps):
         #photoHash = "0x1500000000000000000000000000000000000000000000000000000000000000"
-        #catogory = "0x1100000000000000000000000000000000000000000000000000000000000000"
+        #category = "0x1100000000000000000000000000000000000000000000000000000000000000"
         #numbers = 5
         #machineID = 10
         #localtime = 60000
         #gps = 100000
         rpt=self.contract.functions.addPhoto(photoHash,
-                                             catogory,
+                                             category,
                                              numbers,
                                              machineID,
                                              localtime,
@@ -73,7 +73,7 @@ class farm():
     def show(self, photo):
         print('photoID:   ', photo[0])
         print('photohash: ', photo[1])
-        print('catogory:  ', photo[2])
+        print('category:  ', photo[2])
         print('numbers:   ', photo[3])
         print('machineID: ', photo[4])
         print('localtime: ', photo[5])
