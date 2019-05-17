@@ -7,7 +7,7 @@ class farm():
         self.web3 = Web3(HTTPProvider('http://140.112.230.86:30400'))
         self.abi= abi
         self.sc_addr = self.web3.toChecksumAddress("0x2c60332b32d4820a88a40fa11a26f120f2ff4192")
-        self.sd_addr = self.web3.toChecksumAddress("0x132f98e1aa89ff2557f117906997d993fa33338f")
+        self.sd_addr = self.web3.toChecksumAddress("0x453a89756b355db702a15f94689322f39908744c")
         self.contract = self.web3.eth.contract(abi = self.abi, address = self.sc_addr)
         self.photos = []
     def send(self, photoHash, category, numbers, machineID, localtime, gps):

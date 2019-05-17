@@ -7,7 +7,7 @@ abi = [
 				"type": "bytes32"
 			},
 			{
-				"name": "catogory",
+				"name": "category",
 				"type": "bytes32"
 			},
 			{
@@ -91,4 +91,5 @@ abi = [
 		"type": "function"
 	}
 ]
+
 
